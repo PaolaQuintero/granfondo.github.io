@@ -1,0 +1,46 @@
+img{
+  opacity: 0.5;
+}
+
+h2{
+  color:white;
+  font-family: fantasy;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.p-size{
+  font-weight: normal;
+  text-align: center;
+  margin: 30px;
+  
+}
+
+.img-fluid{
+  margin-bottom: 20px;
+  margin-left: 300px;
+  margin-top: 50px;
+  opacity: 1;
+  width: 60%;
+  height: 300px;
+
+}
+
+.container-form{
+
+  background-color: aqua;
+}
+
+
+p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.img-container{
+  opacity: 1;
+}
+
+.logo{
+ font-family: fantasy;
+}

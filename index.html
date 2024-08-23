@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <h2 class="h1 text-success  logo">Cycling</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Registrarse</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5" >
+    <h1 style="text-align: center; font-family: fantasy;color:gold; font-size: 40px;">Formulario de Registro</h1>
+    
+    <form style="margin-left: 300px; "  action="http://localhost:3000/submit" method="post">
+      <div class="form-group col-md-8">
+        <label for="nombres">Nombres:</label>
+        <input type="text" class="form-control" id="nombres" name="nombres" required>
+      </div>
+      <br>
+      <div class="form-group col-md-8">
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+      </div>
+      <br>
+      <div class="form-group col-md-8">
+        <label for="tipo_documento">Tipo de Documento:</label>
+        <select class="form-control" id="tipo_documento" name="tipo_documento" required>
+          <option value="cedula de ciudadanía">Cédula de Ciudadanía</option>
+          <option value="cedula de extranjería">Cédula de Extranjería</option>
+          <option value="pasaporte">Pasaporte</option>
+          <option value="tarjeta de identidad">Tarjeta de Identidad</option>
+        </select>
+      </div>
+      <br>
+      <div class="form-group col-md-8">
+        <label for="numero_documento">Número de Documento:</label>
+        <input type="text" class="form-control" id="numero_documento" name="numero_documento" required>
+      </div>
+      <br>
+      <div class="form-group col-md-8">
+        <label for="edad">Edad:</label>
+        <input type="number" class="form-control" id="edad" name="edad" required>
+      </div>
+      <br>
+      <div class="form-group col-md-8">
+        <label for="tipo_sangre">Tipo de Sangre:</label>
+        <select class="form-control" id="tipo_sangre" name="tipo_sangre" required>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+        </select>
+      </div>
+      <br>
+      <div class="form-group col-md-8">
+        <label for="contacto">Contacto:</label>
+        <input type="text" class="form-control" id="contacto" name="contacto" required>
+      </div>
+      <br>
+      <div class="form-group col-md-8">
+        <label for="correo">Correo:</label>
+        <input type="email" class="form-control" id="correo" name="correo" required>
+      </div>  
+      <div class="form-group col-md-8">
+        <label for="genero">Género:</label>
+        <input type="text" class="form-control" id="genero" name="genero" required>
+      </div>
+      <br>
+      <div class="form-group col-md-8">
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" class="form-control" id="ciudad" name="ciudad" required>
+      </div>
+      <br>
+      <div class="form-group col-md-8">
+        <label for="direccion">Dirección:</label>
+        <input type="text" class="form-control" id="direccion" name="direccion" required>
+      </div>
+      <br>
+      <div class="form-group col-md-8">
+        <label for="ruta">Ruta:</label>
+        <input type="text" class="form-control" id="ruta" name="ruta" required>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-warning col-md-8">Enviar</button>
+    </form>
+    <br>
+    <br>
+  </div>
+  <div id="successMessage" class="mt-4" style="display: none;">
+    <h3>¡Registro exitoso!</h3>
+    <a href="/usuarios" class="btn btn-success">Ver Usuarios Registrados</a>
+  </div>
+</div>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
